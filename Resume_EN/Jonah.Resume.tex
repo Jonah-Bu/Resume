@@ -1,0 +1,169 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}        % standard LaTeX graphics tool
+\usepackage[colorlinks, linkcolor=blue, CJKbookmarks=true]{hyperref}
+\usepackage{CJK}
+
+
+
+
+\begin{CJK}{UTF8}{gbsn}
+
+
+%\name{卜晶礻韦} % Your name
+%\address{86 Overland Road \quad \\ \quad Waltham, MA 02451} % Your address
+%% \address{86 Overland Road \\ Waltham, MA 02451} % Your secondary addess (optional)
+%\address{15921913396 \quad \\ \quad Bu.Jonah@gmail.com} % Your phone number and email
+\begin{document}
+%\begin{figure}
+%	\centering
+%	\includegraphics[scale=1.2]{images/name.pdf}
+%\end{figure}
+\vspace{-60pt}
+\begin{center}
+	\textbf{Jonah Bu} \\
+	15921913396 \quad \\ \quad Bu.Jonah@gmail.com
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\
+\begin{rSection}{Education}
+{\bf Shanghai Jiao Tong University} \hfill {2010.09 - 2013.03} \\ 
+Master, Biomedical/Medical Engineering, 2.61/3.0 | top 10\% \\
+Research topic: Encoding mechanism of retina\\
+
+\vspace{-10pt}
+{\bf Shanghai Jiao Tong University} \hfill {2006.09 - 2010.06} \\ 
+Bachelor, Biomedical/Medical Engineering, 3.7/4.3 | top 10\% \\
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-10pt}
+\begin{rSection}{Experience}
+\begin{rSubsection}{Cloud Based Patient Follow-up and Rehab Management Solutions}{2015.8 -
+    Now}{Data Scientist}{Philips Research China}
+\item User Behaviour Analysis and Personalized Recommendation：
+\begin{enumerate}
+\item Develop user classification models to detect potential paying customers or the users who can benefit from the solution
+\item Use machine learning (Stacking with RF+GBDT+LR) to analyze user behavior to facilitate the design of the business model of this solution
+\item Design and develop the knowledge base enabling the functionality of clinical decision support of the system
+\end{enumerate}
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Mobile Obstetrical Monitoring}{2014.06 - 2015.07}{Data Scientist}{Philips Research China}
+\item High Risk Preganacy Identification Model：
+\begin{enumerate}
+\item Use Logistic Regression(LR) and Random Forests(RF) to develop risk predication models for pregnant woman on hypertension in pregnancy and pre-eclampsia
+\item Evaluate and select data features by adding L1 regularization in LR and using out of bag(OOB) to estimate variable importance in RF
+\item Experiment various gradient descent(GD) algorithms and its variants including BGD, Momentum, and Adam to evaluate the influence of choosing different solvers on the results
+\item Design and implement a random patient profile generator for physicians to validate the models
+\item Develop an Android prototype to implentent and test the models
+\end{enumerate}
+\end{rSubsection}
+
+%------------------------------------------------
+\begin{rSubsection}{Personal Health Management Solution}{2014.01 - 2014.12}{Data Scientist}{Philips Research China}
+\item  Chronic Disease Risk Prediction Models：
+\begin{enumerate}
+\item Design the whole workflow of personal health management 
+\item Develop risk predication models on four-year hypertension, eight-year diabetes, and ten-year cardiovascular diseases with Logisitic Regression(LR) and Support Vector Machine(SVM)
+\item Evaluate and select data features
+\item Build an online LR models for the continuously incoming data 
+\item Develop recommendation delivering systems including diet and exercise according to people's risk levels 
+\end{enumerate}
+\end{rSubsection}
+%------------------------------------------------
+
+\begin{rSubsection}{Intelligent Test Suite}{2013.04 - 2013.12}{Data Scientist}{Philips Research China}
+\item Intelligent Test Suite：
+\begin{enumerate}
+\item Rebuild disease risk models (including Weibull Regression and Cox Regression)by literature study
+\item  Design and implement knowledge base to deliver personalized recommendations
+\end{enumerate}
+\end{rSubsection}
+%------------------------------------------------
+
+%------------------------------------------------
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Summary}
+
+\begin{itemize}
+	\item Proficient in machine learning algorithms including regression and classification (LR, LAR, DT, SVM, etc.), clustering (kMeans), and ensemble methods (boosting, bagging and stacking)
+	\item Have a deep understanding of theoretical machine learning including PAC, VC theory, and Rademachar Complexity
+	\item Understand and have experiences in deep learning (RBM, DBN etc.)
+	\item Proficient in various optimization algorithms including gradient descent (BGD, SGD, Momentum, Adam etc.), Newtown method (newtown, BFGS), steepest descent (SD, CG) and Markov Chain Monte Carlo, and Variational Bayesian Inference
+	\item Proficient in various kinds of feature selection methods including filter, wrapper, and embedded
+	\item Understand Hadoop, MapReduce, and Spark
+	\item Python，Matlab，R
+	\item C++
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+
+{\bf Journal}
+\begin{itemize}\small
+\item {\bf Jingyi Bu}, Hao Li, Hai-Qing Gong, Pei-Ji Liang, Pu-Ming Zhang. "Gap junction permeability modulated by dopamine exerts effects on spatial and temporal correlation of retinal ganglion cells’ firing activities." in {\em Journal of Computational Neuroscience}, 2013. (SCI indexed, IF = 2.51) 
+\end{itemize}
+
+
+{\bf Conference}
+\begin{itemize}\small
+\item {\bf Jingyi Bu}, Ning Lan.  "An Improved Multi-Channel Cortical Recording And Stimulation System." {\em International Convention on Rehabilitation Engineering \& Assistive Technology}, p. 98-101, 2010. (EI indexed)
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	PATENT SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Patents}
+
+\begin{itemize}
+\item  Wang Jin, {\bf Bu Jingyi}.  \href{http://www.google.com/patents/WO2015052609A1?cl=en}{"An Apparatus and Method for Evaluating Multichannel ECG Signals"} WO2015052609A1.16/04/2015
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% \clearpage
+\end{CJK}
+\end{document}

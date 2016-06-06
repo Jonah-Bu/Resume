@@ -1,0 +1,174 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}        % standard LaTeX graphics tool
+\usepackage[colorlinks, linkcolor=blue, CJKbookmarks=true]{hyperref}
+\usepackage{CJK}
+
+
+
+
+\begin{CJK}{UTF8}{gbsn}
+
+
+%\name{卜晶礻韦} % Your name
+%\address{86 Overland Road \quad \\ \quad Waltham, MA 02451} % Your address
+%% \address{86 Overland Road \\ Waltham, MA 02451} % Your secondary addess (optional)
+%\address{15921913396 \quad \\ \quad Bu.Jonah@gmail.com} % Your phone number and email
+\begin{document}
+\begin{figure}
+	\centering
+	\includegraphics[scale=1.2]{images/name.pdf}
+\end{figure}
+\vspace{-60pt}
+\begin{center}
+	15921913396 \quad \\ \quad Bu.Jonah@gmail.com
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\
+\begin{rSection}{教育}
+{\bf 上海交通大学} \hfill {2010.09 - 2013.03} \\ 
+硕士, 生物医学工程 \\
+课题: Retina神经网络编码机制\\
+
+\vspace{-10pt}
+{\bf 上海交通大学} \hfill {2006.09 - 2010.06} \\ 
+本科, 生物医学工程 \\
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-10pt}
+\begin{rSection}{经历}
+\begin{rSubsection}{飞利浦心血管院后数据分析系统}{2015.8 -
+    现在}{Data Scientist}{飞利浦中国研究院}
+\item 用户行为分析与个性化推荐：
+\begin{enumerate}
+\item 利用系统所收集的用户信息(包括年龄、性别、教育程度、家庭情况等所有与用户相关的信息)和系统所记录的用户行为(包括用药依从性、检查录入情况、在系统中的行为等等)，判断哪些用户是该系统的潜在客户，以及哪些用户在使用该系统后会获得医学收益
+\item 使用stacking(RF＋GBDT＋LR)对用户进行分类
+\item 建立知识库，根据不同的用户分类进行个性化推荐
+\end{enumerate}
+\end{rSubsection}
+
+%------------------------------------------------
+\begin{rSubsection}{个性化推荐知识库}{2015.07 - 2015.12}{Data Scientist}{飞利浦中国研究院}
+\item  为个性化推荐系统建立知识库和规则匹配系统：
+\begin{enumerate}
+\item 提出一个多层知识抽取框架，将原始的以自然语言描述的“知识”逐层抽象成为计算机可执行的语句 
+\item 使用wiki作为知识管理平台
+\item 编写爬虫将wiki页面上的知识抽取并写入MongoDB
+\item 使用Drools管理和执行匹配规则 
+\end{enumerate}
+\end{rSubsection}
+%------------------------------------------------
+
+\begin{rSubsection}{高风险孕妇预测模型}{2014.06 - 2015.07}{Data Scientist}{飞利浦中国研究院}
+\item 基于移动平台的孕妇风险监测系统(Mobile Obstetrical Monitoring)：
+\begin{enumerate}
+\item 使用Logistic Regression(LR)和Random Forests(RF)算法建立孕妇孕期出现高危高血压以及 preeclampsia疾病的预测模型
+\item  对数据进行特征选择，使用包括在LR中加入正则化惩罚项(Lasso)，和在RF中使用out of bag (OOB)估计变量重要性(variable importance)
+\item 试验不同的梯度下降(GD)算法对结果的影响，包括batch GD，Momentum，Adam，以及BFGS
+\item 在android平台开发一个原型，用于临床医生对该模型进行验证
+\end{enumerate}
+\end{rSubsection}
+%------------------------------------------------
+
+\begin{rSubsection}{个人健康管理与个性化推荐系统}{2014.01 - 2014.12}{
+		Data Scientist}{飞利浦中国研究院}
+\item 个人健康管理系统(Personal Health Management Solution)：
+\begin{enumerate}
+\item 使用Logistic Regression(LR)和支持向量机(SVM)算法建立四年期高血压、八年期糖尿病和十年期心血管疾病的风险预测模型
+\item 利用不断得到的新数据，尝试建立了预测模型的在线版本(online LR)
+\end{enumerate}
+\end{rSubsection}
+%------------------------------------------------
+
+\begin{rSubsection}{智能检测套件}{2013.04 - 2013.12}{Data Scientist}{飞利浦中国研究院}
+\item 智能建议模块的算法设计(临床决策支持):
+\begin{enumerate}
+\item 进行文献研究(literature study)，利用文献中已报导的模型(包括Weibull Regression和Cox Regression)对患者进行风险预测
+\item 建立知识库，建立风险预测结果和个性化建议之间的映射关系
+\end{enumerate}
+\end{rSubsection}
+
+%------------------------------------------------
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{技能}
+
+\begin{itemize}
+	\item 熟练掌握各种机器学习算法，包括回归和分类(LR，LAR，DT，SVM等)，聚类(kNN，kMeans)，以及集成学习算法(boosting，bagging和stacking)
+	\item 理解机器学习理论，包括PAC学习，VC理论，以及Rademacher复杂度
+	\item 掌握深度学习算法，包括RBM，DBN等
+	\item 掌握各种优化算法，包括梯度下降及其变种(BGD，SGD，Momentum，Adam等)，牛顿法 (newton, BFGS)， 最速下降(SD, CG)，Markov Chain Monte Carlo，Variational Bayesian Inference 
+	\item 掌握各种特征选择(feature selection)方法，包括filter，wrapper，embedded
+	\item 了解Hadoop，MapReduce，Spark
+	\item 熟练掌握Python，Matlab，R
+	\item 掌握Java, C++
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{发表}
+
+{\bf 期刊}
+\begin{itemize}\small
+\item {\bf Jingyi Bu}, Hao Li, Hai-Qing Gong, Pei-Ji Liang, Pu-Ming Zhang. ``Gap junction permeability modulated by dopamine exerts effects on spatial and temporal correlation of retinal ganglion cells’ firing activities.'' in {\em Journal of Computational Neuroscience}, 2013. (SCI indexed, IF = 2.51) 
+\end{itemize}
+
+
+{\bf 国际会议}
+\begin{itemize}\small
+\item {\bf Jingyi Bu}, Ning Lan.  ``An Improved Multi-Channel Cortical Recording And Stimulation System.'' {\em International Convention on Rehabilitation Engineering \& Assistive Technology}, p. 98-101, 2010. (EI indexed)
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	PATENT SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{专利}
+
+\begin{itemize}
+\item  Wang Jin, {\bf Bu Jingyi}.  \href{http://www.google.com/patents/WO2015052609A1?cl=en}{``An Apparatus and Method for Evaluating Multichannel ECG Signals''} WO2015052609A1.16/04/2015
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% \clearpage
+\end{CJK}
+\end{document}
